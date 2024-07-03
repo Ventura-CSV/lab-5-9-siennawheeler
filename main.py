@@ -2,11 +2,11 @@ import random
 
 
 def bubble(numbers):
-    """
-    ########################################
-    Code Your Program here
-    ########################################
-    """
+    for x in range(len(numbers) - 1):
+        if numbers[x] > numbers[x + 1]:
+            temp = numbers[x]
+            numbers[x] = numbers[x + 1]
+            numbers[x + 1] = temp
 
 
 def main():
